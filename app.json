@@ -2,7 +2,7 @@
   "expo": {
     "name": "Auth",
     "slug": "Auth",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -19,7 +19,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.daavipf.Auth",
+      "permissions": ["INTERNET"]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,15 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b9b09e64-8988-4a33-9c23-7c554c79b82d"
+      },
+      "apiUrl":"https://minha-api.com"
     }
   }
 }
